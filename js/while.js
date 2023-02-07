@@ -12,3 +12,8 @@ const numberDatabase =[]
         }
     }
     console.log(numberDatabase)
+    for (let i = 0; i < numberDatabase.length; i++) {
+        console.log(numberDatabase[i]);
+    }
+
+    
