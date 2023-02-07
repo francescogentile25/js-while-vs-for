@@ -5,13 +5,10 @@
 
 let userNumber= prompt("Inserisci un numero dispari")
 const numberDatabase =[]
-console.log(numberDatabase)
-
-for(i=0, numberDatabase.lenght<10; i++;){
-    userNumber= prompt("Inserisci un numero dispari")
-    while (userNumber %2 ===0 || (isNaN(userNumber))){
+    while (numberDatabase.length<10){
         userNumber= prompt("Inserisci un numero dispari")
+        if (userNumber %2 ===1 && (!isNaN(userNumber))){
+            numberDatabase.push(parseInt(userNumber))
+        }
     }
-    numberDatabase.push(parseInt(userNumber))
-}
-console.log(numberDatabase[i])
+    console.log(numberDatabase)
